@@ -22,5 +22,5 @@ for j in ${FILES[@]}; do
 	sleep .075s
 	#echo $index
 
-	mv "$j" "justin-IMAGE-$index.jpg"
+	mv "$j" "jimbo-IMAGE-$index.jpg"
 done
