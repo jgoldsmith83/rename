@@ -3,21 +3,25 @@
 FILES=()
 index=0
 
+# iterate through all images in the cwd
 for i in *.jpg; do
 
-	#echo "Adding$i"
-	#echo $(($index + 1))
+	# add each image to an array
 	FILES+=("$i")
 done
 
-
+# iterate over the array containing the images
 for j in ${FILES[@]}; do
 
+	# increment counter variable to be used as file name differentiator
 	((index++))
 
+	
 	echo "renaming... $j ... to ... jimbo-IMAGE-$index.jpg"
 	echo ""
-	sleep .075s
+	# sleep for readable output - only necessary for testing
+	#sleep .075s
 
+	# commit name changes to each file
 	mv "$j" "jimbo-IMAGE-$index.jpg"
 done
