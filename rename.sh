@@ -17,7 +17,7 @@ for j in ${FILES[@]}; do
 
 	((index++))
 
-	echo "renaming... $j ... to ... justin-IMAGE-$index.jpg"
+	echo "renaming... $j ... to ... jimbo-IMAGE-$index.jpg"
 	echo ""
 	sleep .075s
 	#echo $index
